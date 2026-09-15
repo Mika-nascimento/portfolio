@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Mikaelle Nascimento | Data Analysis & Fraud Prevention",
+    "description": "Fraud Prevention Analyst and Statistics & Data Science undergraduate at UFES. SQL, Tableau, Power BI and Python applied to transactional data.",
+    "language": "en",
+    "themeColor": "#0b0b0d",
+    "url": "https://mikaellenascimento.vercel.app",
+    "ogImage": "/og-image.jpg",
+    "keywords": "Data Analyst, Fraud Prevention, SQL, Tableau, Power BI, Python, Statistics, Business Intelligence, Brazil",
+    "author": "Mikaelle Nascimento",
+    "robots": "index, follow",
+    "ogSiteName": "Mikaelle Nascimento",
+    "locale": "en_US",
+    "favicon": "/favicon.svg",
+    "profileImage": "/profile.jpg"
+  },
+  "structuredData": {
+    "enabled": true,
+    "address": {
+      "locality": "Vitória",
+      "country": "BR"
+    },
+    "knowsAbout": [
+      "SQL",
+      "Tableau",
+      "Power BI",
+      "Python",
+      "Data Analysis",
+      "Fraud Prevention",
+      "Statistics",
+      "Business Intelligence"
+    ]
+  },
+  "branding": {
+    "name": "Mikaelle Nascimento",
+    "logo": null,
+    "showName": true
+  },
+  "navigation": {
+    "links": [
+      { "href": "#hero", "label": "Home", "external": false },
+      { "href": "#experience", "label": "Experience", "external": false },
+      { "href": "#achievements", "label": "Highlights", "external": false },
+      { "href": "#skills", "label": "Skills", "external": false },
+      { "href": "#contact", "label": "Contact", "external": false }
+    ],
+    "cta": {
+      "text": "Contact",
+      "href": "#contact"
+    }
+  },
+  "social": [
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/mikaellenascimento-52a196214/",
+      "label": "LinkedIn"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/Mika-nascimento",
+      "label": "GitHub"
+    },
+    {
+      "platform": "email",
+      "value": "kaellenasciment@gmail.com",
+      "label": "Email"
+    }
+  ],
+  "analytics": {
+    "vercel": true,
+    "googleAnalytics": null,
+    "plausible": null
+  },
+  "features": {
+    "darkMode": true,
+    "designSystemSwitcher": false,
+    "smoothScroll": true,
+    "reduceMotion": "respect-system",
+    "layout": "cards"
+  }
+}

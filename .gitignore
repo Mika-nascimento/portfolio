@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+node_modules
+dist
+dist-ssr
+*.local
+.direnv
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.envrc
+.playwright-mcp
+
+# Portfolio switcher backups
+src/config/.backup
+
+# Generated files
+index.html
+src/config/generated/
+
+# Local material from the original starter project. It is not part of this portfolio.
+docs/
+CONTRIBUTING.md
+src/config/examples/
+src/types/
+src/lib/skillMatcher.ts
+src/lib/__tests__/skillScoring.test.ts
+src/lib/__tests__/locationClassification.test.ts
+scripts/import-resume.ts
+scripts/switch-portfolio.ts
+scripts/validate-examples.ts

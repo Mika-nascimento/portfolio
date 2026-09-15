@@ -1,0 +1,250 @@
+{
+  "variables": {
+    "careerStartYear": 2024
+  },
+  "sections": ["hero", "experience", "achievements", "skills", "contact"],
+  "hero": {
+    "name": "Mikaelle Nascimento",
+    "title": "Análise de Dados & Prevenção à Fraude",
+    "tagline": "Analista de Prevenção à Fraude na PicPay. Trabalho com extração e análise de dados transacionais em alto volume, consultas SQL e dashboards para transformar evidência em decisão. Graduanda em Estatística e Ciência de Dados pela UFES.",
+    "avatar": "/profile.jpg",
+    "cta": {
+      "primary": {
+        "text": "Ver Experiência",
+        "target": "#experience"
+      },
+      "secondary": {
+        "text": "Contato",
+        "target": "#contact"
+      }
+    },
+    "statusBadge": {
+      "text": "SQL · Tableau · Power BI · Python",
+      "active": true
+    },
+    "valuePills": [
+      {
+        "label": "Fintech",
+        "sublabel": "Dados Transacionais",
+        "highlight": true
+      },
+      { "label": "SQL", "sublabel": "Investigação & Análise", "highlight": false },
+      { "label": "UFES", "sublabel": "Estatística & Dados", "highlight": false }
+    ],
+    "quickStats": [
+      {
+        "value": "{{yearsSince:careerStartYear}}",
+        "suffix": "+",
+        "label": "Anos de Experiência"
+      },
+      {
+        "value": "2029",
+        "suffix": "",
+        "label": "Conclusão UFES"
+      }
+    ],
+    "badge": {
+      "value": "UFES",
+      "title": "Estatística e Ciência de Dados",
+      "subtitle": "Bacharelado · 2026 - 2029"
+    }
+  },
+  "experienceSection": {
+    "eyebrow": "Trajetória",
+    "headline": "Experiência Profissional",
+    "description": "Da área comercial à análise de dados em fintech, com foco constante em evidência e resultado."
+  },
+  "experience": [
+    {
+      "company": "PicPay",
+      "role": "Analista de Prevenção à Fraude PF I",
+      "period": "Julho de 2025 - Atual",
+      "location": "Vitória, ES",
+      "highlights": [
+        "Extração e análise de dados transacionais em alto volume para identificação de divergências, comportamentos suspeitos e padrões de risco",
+        "Construção de consultas SQL para investigação de alertas, cruzando dados cadastrais e transacionais de diferentes fontes",
+        "Desenvolvimento e manutenção de dashboard próprio em Tableau para acompanhamento de indicadores de performance",
+        "Tratamento de demandas por chamado, priorizando casos conforme prazo, criticidade e impacto",
+        "Elaboração de relatórios e documentação de investigações, mantendo rastreabilidade das análises para auditoria",
+        "Revisão de aprovações e bloqueios gerados por sistemas automatizados (double-check), apoiando a qualidade das decisões"
+      ],
+      "techStack": ["SQL", "Tableau", "Excel Avançado", "Análise Transacional"]
+    },
+    {
+      "company": "Grupo Autoglass",
+      "role": "Consultora de Vendas",
+      "period": "Fevereiro de 2024 - Julho de 2025",
+      "location": "Vila Velha, ES",
+      "highlights": [
+        "Prospecção, ativação e gestão de carteira de clientes CNPJ no setor automotivo, com acompanhamento de indicadores de funil",
+        "Atuação em relacionamento, negociação e suporte técnico-comercial, desenvolvendo visão de negócio e orientação a resultados",
+        "Iniciativa de melhoria contínua reconhecida internamente com 2º lugar no Panorama Lean"
+      ],
+      "techStack": ["Excel", "Indicadores de Funil", "Automação de Processos"]
+    }
+  ],
+  "achievementsSection": {
+    "eyebrow": "Destaques",
+    "headline": "Principais Entregas",
+    "description": "Iniciativas onde análise de dados, automação e visão de negócio geraram resultado prático."
+  },
+  "achievements": [
+    {
+      "id": "dashboard-tableau",
+      "title": "Dashboard de Indicadores em Tableau",
+      "category": "dados",
+      "summary": "Desenvolvimento e manutenção de um dashboard próprio em Tableau para acompanhamento de indicadores de performance.",
+      "impact": "Visibilidade contínua de indicadores, substituindo acompanhamento manual por visualização centralizada",
+      "details": [
+        "Modelagem dos indicadores relevantes a partir de dados transacionais",
+        "Construção das visualizações e manutenção contínua do painel",
+        "Uso do dashboard como base para acompanhamento de performance e priorização"
+      ],
+      "metrics": [{ "label": "Ferramenta", "value": "Tableau" }]
+    },
+    {
+      "id": "investigacao-sql",
+      "title": "Investigação de Alertas com SQL",
+      "category": "análise",
+      "summary": "Construção de consultas SQL para investigação de alertas, cruzando dados cadastrais e transacionais de diferentes fontes.",
+      "impact": "Análises rastreáveis e documentadas, sustentando decisões com evidência",
+      "details": [
+        "Cruzamento de bases distintas para reconstruir o contexto completo de cada alerta",
+        "Identificação de divergências e padrões de risco em alto volume de transações",
+        "Documentação das investigações mantendo rastreabilidade para auditoria",
+        "Revisão de decisões automatizadas (double-check) para elevar a qualidade do resultado"
+      ],
+      "metrics": [{ "label": "Base", "value": "SQL" }]
+    },
+    {
+      "id": "melhoria-continua",
+      "title": "Automação Reconhecida em Programa Lean",
+      "category": "automação",
+      "summary": "Iniciativa de melhoria contínua desenvolvida de forma autônoma, a partir de uma dor identificada na rotina de trabalho.",
+      "impact": "2º lugar no Panorama Lean, programa interno de melhoria contínua",
+      "details": [
+        "Identificação de uma oportunidade de automação dentro do fluxo da equipe",
+        "Construção e implementação da solução de ponta a ponta",
+        "Apresentação do resultado no programa interno de melhoria contínua"
+      ],
+      "metrics": [{ "label": "Panorama Lean", "value": "2º lugar" }]
+    },
+    {
+      "id": "formacao-dados",
+      "title": "Formação em Estatística e Ciência de Dados",
+      "category": "formação",
+      "summary": "Ingresso na UFES via transferência externa para o Bacharelado em Estatística e Ciência de Dados, após 4 períodos em Engenharia de Software.",
+      "impact": "Base estatística formal somada à experiência prática com dados em fintech",
+      "details": [
+        "Aprovada em processo de transferência externa para a Universidade Federal do Espírito Santo",
+        "Aproveitamento de disciplinas cursadas na formação anterior em Engenharia de Software",
+        "Participante do Programa Embaixadores Estudantis do Google, com foco em Inteligência Artificial"
+      ],
+      "metrics": [
+        { "label": "Instituição", "value": "UFES" },
+        { "label": "Conclusão", "value": "2029" }
+      ]
+    }
+  ],
+  "skillCategories": [
+    {
+      "name": "Manipulação de Dados",
+      "skills": [
+        {
+          "name": "SQL",
+          "context": "Consultas para investigação, cruzamento de bases e extração em alto volume",
+          "aliases": ["sql", "queries", "consultas"],
+          "weight": 9
+        },
+        {
+          "name": "Excel Avançado",
+          "context": "Tratamento, análise e consolidação de dados na rotina da operação",
+          "aliases": ["excel"],
+          "weight": 8
+        },
+        {
+          "name": "Python",
+          "context": "Noções com Pandas e NumPy para análise exploratória de dados",
+          "aliases": ["python", "pandas", "numpy"],
+          "weight": 6
+        },
+        {
+          "name": "Data Cleansing",
+          "context": "Higienização e limpeza de dados cadastrais e transacionais",
+          "aliases": ["limpeza de dados", "higienização"],
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "name": "Visualização & BI",
+      "skills": [
+        {
+          "name": "Tableau",
+          "context": "Criação e manutenção de dashboards e relatórios interativos",
+          "weight": 8
+        },
+        {
+          "name": "Power BI",
+          "context": "Criação de dashboards e relatórios interativos",
+          "weight": 6
+        },
+        {
+          "name": "Relatórios para Decisão",
+          "context": "Elaboração de relatórios analíticos que sustentam tomada de decisão",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "name": "Análise & Negócio",
+      "skills": [
+        {
+          "name": "Estatística Descritiva",
+          "context": "Base acadêmica em Estatística e Ciência de Dados pela UFES",
+          "weight": 7
+        },
+        {
+          "name": "Análise de Risco",
+          "context": "Identificação de divergências, comportamentos suspeitos e padrões de risco",
+          "weight": 8
+        },
+        {
+          "name": "Levantamento de Requisitos",
+          "context": "Tradução de necessidades de negócio em análises e entregas",
+          "weight": 6
+        },
+        {
+          "name": "Documentação & Rastreabilidade",
+          "context": "Registro de análises e investigações com padrão de auditoria",
+          "weight": 7
+        }
+      ]
+    }
+  ],
+  "skillsSection": {
+    "eyebrow": "Stack Técnica",
+    "headline": "Ferramentas & Competências",
+    "description": "Rotina consolidada em SQL e visualização de dados, somada a formação estatística e visão de negócio.",
+    "summary": [
+      { "title": "SQL", "subtitle": "Extração & Investigação" },
+      { "title": "BI", "subtitle": "Tableau & Power BI" },
+      { "title": "Estatística", "subtitle": "Formação UFES" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "headline": "Vamos Conversar",
+    "description": "Disponível para trocar sobre análise de dados, BI e prevenção à fraude.",
+    "ctaText": "Para conversas profissionais, o caminho mais rápido é o e-mail ou o LinkedIn.",
+    "location": "Vitória, ES",
+    "preferredMethod": "email",
+    "showSocial": true
+  },
+  "footer": {
+    "copyrightName": "Mikaelle Nascimento",
+    "showYear": true,
+    "showRights": true
+  },
+  "custom": []
+}

@@ -1,0 +1,236 @@
+/* Neon Terminal Design System - Minimal neutrals with a neon green signal */
+
+[data-design-system='neon'] {
+  /* Typography - Tech / terminal flavoured */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Neutral ramp - cool, desaturated greys */
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #0b0b0d;
+
+  /* Neon green - the single accent that carries the whole palette */
+  --color-neon-50: #eafff3;
+  --color-neon-100: #ccffe2;
+  --color-neon-200: #99ffc6;
+  --color-neon-300: #5cfaa6;
+  --color-neon-400: #22ee88;
+  --color-neon-500: #00e572;
+  --color-neon-600: #00b95c;
+  --color-neon-700: #00914a;
+  --color-neon-800: #06703d;
+  --color-neon-900: #075c34;
+  --color-neon-950: #01331c;
+
+  /* ---------------------------------------------------------------------
+   * Base palette remap.
+   *
+   * Components across the template use the template's original `slate-*`,
+   * `navy-*` and `brass-*` utility classes directly. Redefining those custom
+   * properties inside this scope re-points every one of those utilities at the
+   * neon palette, so the whole UI follows the theme instead of only the
+   * semantic tokens below.
+   * ------------------------------------------------------------------- */
+
+  /* slate-* -> cool neutral greys */
+  --color-slate-50: #fafafa;
+  --color-slate-100: #f4f4f5;
+  --color-slate-200: #e4e4e7;
+  --color-slate-300: #d4d4d8;
+  --color-slate-400: #a1a1aa;
+  --color-slate-500: #71717a;
+  --color-slate-600: #52525b;
+  --color-slate-700: #3f3f46;
+  --color-slate-800: #27272a;
+  --color-slate-900: #18181b;
+  --color-slate-950: #0b0b0d;
+
+  /* navy-* -> near-black structural surfaces */
+  --color-navy-50: #f4f4f5;
+  --color-navy-100: #e4e4e7;
+  --color-navy-200: #d4d4d8;
+  --color-navy-300: #a1a1aa;
+  --color-navy-400: #71717a;
+  --color-navy-500: #52525b;
+  --color-navy-600: #3f3f46;
+  --color-navy-700: #27272a;
+  --color-navy-800: #18181b;
+  --color-navy-900: #131316;
+  --color-navy-950: #0b0b0d;
+
+  /* brass-* -> the neon green accent ramp */
+  --color-brass-50: var(--color-neon-50);
+  --color-brass-100: var(--color-neon-100);
+  --color-brass-200: var(--color-neon-200);
+  --color-brass-300: var(--color-neon-300);
+  --color-brass-400: var(--color-neon-400);
+  --color-brass-500: var(--color-neon-600);
+  --color-brass-600: var(--color-neon-700);
+  --color-brass-700: var(--color-neon-800);
+  --color-brass-800: var(--color-neon-900);
+  --color-brass-900: var(--color-neon-950);
+  --color-brass-950: var(--color-neon-950);
+
+  /* Light mode: near-white canvas, deep ink, restrained neon */
+  --color-background: var(--color-zinc-50);
+  --color-foreground: var(--color-zinc-950);
+  --color-muted: var(--color-zinc-100);
+  --color-muted-foreground: var(--color-zinc-500);
+  --color-card: #ffffff;
+  --color-card-foreground: var(--color-zinc-900);
+  --color-border: var(--color-zinc-200);
+  --color-primary: var(--color-zinc-950);
+  --color-primary-foreground: var(--color-neon-300);
+  --color-secondary: var(--color-zinc-100);
+  --color-secondary-foreground: var(--color-zinc-900);
+  --color-accent: var(--color-neon-700);
+  --color-accent-foreground: #ffffff;
+
+  /* Border Radius - tight, engineered corners */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+  --radius-2xl: 0.75rem;
+  --radius-card: 0.375rem;
+  --radius-button: 0.25rem;
+  --radius-badge: 9999px;
+
+  /* Shadows - flat and quiet in light mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-md:
+    0 2px 4px -1px rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+  --shadow-lg:
+    0 8px 16px -4px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-xl:
+    0 16px 32px -8px rgb(0 0 0 / 0.08), 0 4px 8px -4px rgb(0 0 0 / 0.04);
+  --shadow-card: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-card-hover: 0 8px 24px -8px rgb(0 0 0 / 0.12);
+  --shadow-button: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+
+  /* Borders - crisp hairlines */
+  --border-width: 1px;
+  --border-style: solid;
+
+  /* Decorative */
+  --rotation-card: 0deg;
+  --paper-texture-opacity: 0;
+
+  /* Flip Card Animation */
+  --flip-duration: 400ms;
+  --flip-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Neon Dark Mode - where the palette is designed to live */
+[data-design-system='neon'].dark {
+  --color-background: var(--color-zinc-950);
+  --color-foreground: var(--color-zinc-100);
+  --color-muted: var(--color-zinc-900);
+  --color-muted-foreground: var(--color-zinc-400);
+  --color-card: #131316;
+  --color-card-foreground: var(--color-zinc-100);
+  --color-border: var(--color-zinc-800);
+  --color-primary: var(--color-neon-400);
+  --color-primary-foreground: var(--color-zinc-950);
+  --color-secondary: var(--color-zinc-800);
+  --color-secondary-foreground: var(--color-zinc-100);
+  --color-accent: var(--color-neon-400);
+  --color-accent-foreground: var(--color-zinc-950);
+
+  /* Dark shadows carry a faint neon bloom */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  --shadow-md: 0 2px 6px -1px rgb(0 0 0 / 0.6);
+  --shadow-lg: 0 10px 24px -6px rgb(0 0 0 / 0.7);
+  --shadow-xl: 0 20px 40px -10px rgb(0 0 0 / 0.75);
+  --shadow-card: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  --shadow-card-hover:
+    0 12px 32px -10px rgb(0 0 0 / 0.8), 0 0 24px -8px rgba(34, 238, 136, 0.25);
+  --shadow-button: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+}
+
+/* Subtle grid backdrop - reads as "technical" without shouting */
+[data-design-system='neon'] .section-bg-slate {
+  background-image:
+    linear-gradient(to right, rgba(113, 113, 122, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(113, 113, 122, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+[data-design-system='neon'].dark .section-bg-slate {
+  background-image:
+    linear-gradient(to right, rgba(34, 238, 136, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 238, 136, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Cards: hairline border, neon edge on hover */
+[data-design-system='neon'] .card {
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s ease;
+}
+
+[data-design-system='neon'] .card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-neon-600);
+  box-shadow: var(--shadow-card-hover);
+}
+
+[data-design-system='neon'].dark .card:hover {
+  border-color: var(--color-neon-400);
+  box-shadow:
+    0 12px 32px -10px rgb(0 0 0 / 0.8),
+    0 0 28px -8px rgba(34, 238, 136, 0.28);
+}
+
+/* Accent text picks up a faint glow in dark mode only */
+[data-design-system='neon'].dark .text-accent {
+  text-shadow: 0 0 18px rgba(34, 238, 136, 0.35);
+}
+
+/* Monospace treatment for eyebrows / small caps labels */
+[data-design-system='neon'] .section-eyebrow {
+  font-family: var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Portfolio signature: restrained technical grid, a single green signal. */
+[data-design-system='neon'] .portfolio-hero-surface {
+  background:
+    radial-gradient(circle at 82% 24%, rgba(0, 229, 114, 0.16), transparent 25rem),
+    radial-gradient(circle at 12% 88%, rgba(0, 229, 114, 0.07), transparent 22rem),
+    linear-gradient(135deg, #fafafa 0%, #f4f4f5 100%);
+}
+
+[data-design-system='neon'].dark .portfolio-hero-surface {
+  background:
+    radial-gradient(circle at 82% 24%, rgba(0, 229, 114, 0.13), transparent 25rem),
+    radial-gradient(circle at 12% 88%, rgba(0, 229, 114, 0.06), transparent 22rem),
+    linear-gradient(135deg, #0b0b0d 0%, #131316 100%);
+}
+
+[data-design-system='neon'] .portfolio-status {
+  box-shadow: inset 3px 0 0 var(--color-neon-500);
+}
+
+[data-design-system='neon'] .portfolio-name {
+  letter-spacing: -0.055em;
+}
+
+[data-design-system='neon'] .portfolio-role {
+  max-width: 24ch;
+  line-height: 1.08;
+}
